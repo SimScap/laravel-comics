@@ -1,7 +1,7 @@
 <div>
     <div class="centered-container">
         <div class="header-img-container">
-        <img src="" alt="dc-logo-header">
+        <img src="{{asset("images/dc-logo.png")}}" alt="dc-logo-header">
     </div>    
         <nav class="header-nav">
         <ul>
@@ -14,14 +14,16 @@
         </nav>
     </div>
     <div class="my-jumbotron">
-        <img src="" alt="jumbotron">
+        <img src="{{asset("images/jumbotron.jpg")}}" alt="jumbotron">
     </div>
     <div class="content-goes">
         <div class="my-centered-container">
+            @foreach ($headerProduct as $item)                          
             <div class="my-card" >
-                <img src="" alt="">
-            <h4></h4>
+                <img src="{{$item['thumb']}}" alt="{{$item['type']}}">
+            <h4>{{$item['series']}}</h4>
         </div>
+        @endforeach
     </div>
     </div>
 </div>
