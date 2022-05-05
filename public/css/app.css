@@ -83,3 +83,98 @@ div.my-centered-container {
   width: 80%;
   margin: 0 auto;
 }
+
+ul {
+  list-style-type: none;
+  color: rgb(173, 172, 172);
+}
+
+li {
+  margin-bottom: 0.2rem;
+}
+
+h4 {
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+div.main-background {
+  background-image: url("../images/footer-bg.jpg");
+  border: 2px solid black;
+}
+
+div.centered-container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid green;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+div.main-list {
+  border: 2px solid gold;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+div.logo-list {
+  background-image: url("../images/dc-logo-bg.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+  width: 40%;
+}
+
+div.footer-background a {
+  align-self: center;
+  text-decoration: none;
+}
+div.footer-background ul {
+  list-style-type: none;
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+}
+div.footer-background li {
+  align-self: center;
+  margin-left: 0.8rem;
+}
+div.footer-background div.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid green;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+div.footer-background div.footer-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  border: 2px solid brown;
+  padding: 0.8rem;
+}
+div.footer-background div.footer-btn button {
+  width: 120px;
+  border: 2px solid blue;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  padding: 0.5rem;
+}
+div.footer-background div.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  border: 2px solid blue;
+  padding: 0.5rem;
+}
+
+div.footer-background {
+  background-color: rgb(48, 48, 48);
+  height: 80px;
+}
