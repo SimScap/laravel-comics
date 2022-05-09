@@ -7,7 +7,10 @@
         <a>FOLLOW US</a>
         <ul>
             <li>
-                <img src="" :alt="">
+                <img src="/images/footer-facebook.png" :alt="">
+                <img src="/images/footer-periscope.png" :alt="">
+                <img src="/images/footer-pinterest.png" :alt="">
+                <img src="/images/footer-youtube.png" :alt="">
             </li>               
         </ul>
     </div>

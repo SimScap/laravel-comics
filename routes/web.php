@@ -25,4 +25,19 @@ Route::get('/', function () {
     "mainDcList" => $mainDcList, "mainSitesList" => $mainSitesList]);
 })->name('home');
 
+Route::get('/comic/{id}', function ($id) {
+    $headerNav = config('headernav');
+    $mainDcComicsList = config('maindccomicslist');
+    $mainDcShopList = config('maindcshoplist');
+    $mainDcList = config('maindclist');
+    $mainSitesList = config('mainsiteslist');
+    $headerProduct = config('headerproduct');
+    if(is_numeric($id) && $id >= 0 && $id < count($headerProduct)){
+        return view('guest.comic', ["headerNav" => $headerNav,"headerProduct" => $headerProduct[$id],
+        "mainDcComicsList" => $mainDcComicsList, "mainDcShopList" => $mainDcShopList,
+        "mainDcList" => $mainDcList, "mainSitesList" => $mainSitesList]);      
+    }else abort(404);    
+})->name('comic');
+
+
 

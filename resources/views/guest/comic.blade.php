@@ -1,18 +1,27 @@
 @extends('layouts.base')
 
-@section('main-content')
 
+@section ('main-content')
+<div class="blue-div"></div>
+<div class="actionCard">
+</div>   
 
-<div class="content-goes">
-    <div class="my-centered-container">
-        @foreach ($headerProduct as $key => $item )                          
-        <div class="my-card" >
-        <a href="/comic/{{$key}}"><img src="{{$item['thumb']}}" alt="{{$item['type']}}"></a>    
-        <h4>{{$item['series']}}</h4>
+<div class="comic-container">
+    <div class="info-container">
+        <h2>Text cc</h2>
+        <div class="comic-info">
+            <div class="info-price"></div>
+            <div class="comic-price"></div>
+        </div>
     </div>
-        @endforeach
+    <div class="adv-container">
+        <h5>ADVERTISEMENT</h5>
+        <div class="adv-img">
+            <img src="{{asset("images/adv.jpg")}}" alt="adv">
+        </div>
+    </div>
 </div>
-</div>
+
 
 
 <div class="main-background">

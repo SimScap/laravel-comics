@@ -16,14 +16,4 @@
     <div class="my-jumbotron">
         <img src="{{asset("images/jumbotron.jpg")}}" alt="jumbotron">
     </div>
-    <div class="content-goes">
-        <div class="my-centered-container">
-            @foreach ($headerProduct as $item)                          
-            <div class="my-card" >
-                <img src="{{$item['thumb']}}" alt="{{$item['type']}}">
-            <h4>{{$item['series']}}</h4>
-        </div>
-        @endforeach
-    </div>
-    </div>
 </div>
