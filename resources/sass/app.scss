@@ -221,6 +221,8 @@ div.footer-background{
         display: flex;
 
         div.info-price{
+            display: flex;
+            justify-content: space-between;
             border: 2px solid black;
             width: 65%;
             height: 100%;

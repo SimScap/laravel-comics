@@ -4,13 +4,17 @@
 @section ('main-content')
 <div class="blue-div"></div>
 <div class="actionCard">
+    <img src="{{$headerProduct['thumb']}}" alt="">
 </div>   
 
 <div class="comic-container">
     <div class="info-container">
-        <h2>Text cc</h2>
+        <h2>{{$headerProduct['title']}}</h2>
         <div class="comic-info">
-            <div class="info-price"></div>
+            <div class="info-price">
+                <span>U.S Price: {{$headerProduct['price']}}</span>
+                <span>AVAILABLE</span>
+            </div>
             <div class="comic-price"></div>
         </div>
     </div>
