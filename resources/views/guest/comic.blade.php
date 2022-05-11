@@ -15,8 +15,11 @@
                 <span>U.S Price: {{$headerProduct['price']}}</span>
                 <span>AVAILABLE</span>
             </div>
-            <div class="comic-price"></div>
+            <div class="comic-price">
+                <h5>Check Availability v</h5>
+            </div>
         </div>
+        <p>{{$headerProduct['description']}}</p>
     </div>
     <div class="adv-container">
         <h5>ADVERTISEMENT</h5>
@@ -25,6 +28,40 @@
         </div>
     </div>
 </div>
+
+<div class="comic-resume">
+    <div class="talent">
+        <div>
+            <h5>Talent</h5>
+            <span>Art by:</span>
+            @foreach ($headerProduct['artists'] as $artist)
+            <span>{{$artist}}</span>
+            @endforeach
+        </div>  
+        <div>
+            <span>Written by:</span>
+            @foreach ($headerProduct['writers'] as $writer)
+            <span>{{$writer}}</span>
+            @endforeach
+        </div>      
+    </div>
+    <div class="specs">
+        <div>
+            <h5>Talent</h5>
+            <span>Series</span>
+            <span>{{$headerProduct['series']}}</span>
+        </div>  
+        <div>
+            <span>U.S. Price:</span>
+            <span>{{$headerProduct['price']}}</span>
+        </div>
+        <div>
+            <span>On Sale Date:</span>
+            <span>{{$headerProduct['sale_date']}}</span>
+        </div>            
+    </div>
+</div>
+
 
 
 
